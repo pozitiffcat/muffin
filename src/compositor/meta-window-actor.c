@@ -1634,6 +1634,9 @@ meta_window_actor_update_bounding_region_and_borders (MetaWindowActor *self,
       width -= borders.invisible.left + borders.invisible.right;
       height -= borders.invisible.top + borders.invisible.bottom;
     }
+    else {
+        meta_frame_borders_clear (&borders);  
+    }
 
   bounding_rectangle.width = width;
   bounding_rectangle.height = height;
