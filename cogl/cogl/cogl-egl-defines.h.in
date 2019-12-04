@@ -35,6 +35,8 @@
 
 @COGL_EGL_INCLUDES@
 
+#include <EGL/eglmesaext.h>
+
 #endif /* COGL_HAS_EGL_SUPPORT */
 
 #endif
