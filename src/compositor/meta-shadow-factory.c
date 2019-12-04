@@ -118,17 +118,17 @@ struct _MetaShadowFactoryClass
 /* The first element in this array also defines the default parameters
  * for newly created classes */
 static MetaShadowClassInfo default_shadow_classes[] = {
-  { "normal",       { 1, -1, 0, 1, 128 }, { 1, -1, 0, 1, 128 } },
-  { "dialog",       { 1, -1, 0, 1, 128 }, { 1, -1, 0, 1, 128 } },
-  { "modal_dialog", { 1, -1, 0, 1, 128 }, { 1, -1, 0, 1, 128 } },
-  { "utility",      { 1, -1, 0, 1, 128 }, { 1, -1, 0, 1, 128 } },
-  { "border",       { 1, -1, 0, 1, 128 }, { 1, -1, 0, 1, 128 } },
-  { "menu",         { 1, -1, 0, 1, 128 }, { 1, -1, 0, 1, 128 } },
+  { "normal",       { 18, -1, 0, 9, 128 }, { 9, -1, 0, 3, 128 } },
+  { "dialog",       { 18, -1, 0, 9, 128 }, { 9, -1, 0, 3, 128 } },
+  { "modal_dialog", { 18, -1, 0, 3, 128 }, { 9, -1, 0, 3, 128 } },
+  { "utility",      { 9, -1, 0, 3, 128 }, { 9, -1, 0, 1, 128 } },
+  { "border",       { 18, -1, 0, 9, 128 }, { 9, -1, 0, 3, 128 } },
+  { "menu",         { 18, -1, 0, 9, 128 }, { 9, -1, 0, 0, 128 } },
 
-  { "popup-menu",    { 1, -1, 0, 1, 128 }, { 1, -1, 0, 1, 128 } },
+  { "popup-menu",    { 3, -1, 0, 3, 128 }, { 1, -1, 0, 1, 128 } },
 
-  { "dropdown-menu", { 1, 10, 0, 1, 128 }, { 1, 10, 0, 1, 128 } },
-  { "attached",      { 1, -1, 0, 1, 128 }, { 1, -1, 0, 1, 128 } }
+  { "dropdown-menu", { 3, 10, 0, 3, 128 }, { 1, 10, 0, 1, 128 } },
+  { "attached",      { 18, -1, 0, 3, 128 }, { 3, -1, 0, 3, 128 } }
 };
 
 G_DEFINE_TYPE (MetaShadowFactory, meta_shadow_factory, G_TYPE_OBJECT);
