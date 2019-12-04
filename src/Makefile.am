@@ -281,7 +281,7 @@ Meta-$(api_version).gir: libmuffin.la
 	muffin-enum-types.h			\
 	$(libmuffininclude_base_headers)	\
 	$(filter %.c,$(libmuffin_la_SOURCES))
-@META_GIR@_SCANNERFLAGS = $(WARN_SCANNERFLAGS) --warn-all --warn-error
+@META_GIR@_SCANNERFLAGS = $(WARN_SCANNERFLAGS) --warn-all
 
 endif
 
